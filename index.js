@@ -8,7 +8,7 @@ function createTask() {
 function clearList() {
   const list = document.getElementById("listContent");
   if (list.hasChildNodes()) {
-    while (list.hasChildNodes) {
+    while (list.hasChildNodes && list.lastChild !== null) {
       list.removeChild(list.lastChild);
     }
   }
